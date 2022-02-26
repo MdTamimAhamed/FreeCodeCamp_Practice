@@ -1,0 +1,91 @@
+
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --body-bg: #EEEEEE;
+    --pure-white: #ffffff;
+    --font-clr: #333333;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--body-bg);
+}
+
+main #title{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.4em;
+    color: var(--font-clr);
+}
+.subtitle{
+    text-align: center;
+    font-size: .9em;
+    color: var(--font-clr);
+    padding-top: 20px;
+}
+
+#img-div{
+    max-width: 98%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pure-white);
+    margin: 20px auto;
+}
+#image{
+    padding-top: 40px;
+    max-width: 100%;
+    height: auto;
+}
+#img-caption{
+    font-size: .9em;
+    color: var(--font-clr);
+    padding: 15px 0px;
+}
+
+#tribute-info{
+    max-width: 590px;
+    margin: 0 auto;
+}
+#tribute-info h3{
+    text-align: center;
+    color: var(--font-clr);
+    font-weight: 700;
+    margin: 50px;
+}
+.information-list{
+    font-size: .9em;
+    line-height: 28px;
+}
+.information-list li{
+    padding: 10px 0px;
+}
+.information-list .year{
+    font-weight: bold;
+}
+
+.message{
+    max-width: 620px;
+    padding-top: 60px;
+    margin: 0 auto;
+    font-size: .9em;
+    color: var(--font-clr);
+    font-style: italic;
+    line-height: 28px;
+}
+.tribute_link_text{
+    font-size: 1.1em;
+    text-align: center;
+    padding: 60px;
+    color: var(--font-clr);
+    font-weight: 700;
+}
