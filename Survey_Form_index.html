@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/Survey_Form.css">
+</head>
+<body>
+    <h1 id="title">Survey Form Design Using HTML & CSS (Practice)</h1>
+    <p id="description">Created by Tamim Ahamed | March 10, 2022</p>
+
+    <!--Survey form staring from here-->
+    <form action="" id="survey-form">
+        <div class="input-box">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="input-box">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Enter your Email" required>
+        </div>
+
+        <div class="input-box">
+            <label for="number" id="number-label">Age <span class="age-opt">(optional)</span></label>
+            <input type="number" id="number" min="10" max="99" placeholder="Age" >
+        </div>
+
+        <!--Dropdown for role-->
+        <div class="dropdown-box">
+            <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+            <select name="roles" id="dropdown">
+                <option disabled selected value>Select current role</option>
+                <option value="newbie">Newbie</option>
+                <option value="level-one">Level One Seller</option>
+                <option value="level-two">Level Two Seller</option>
+                <option value="top-rated">Top Rated Seller</option>
+                <option value="pro-verified">Pro Verified</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <!--X-->
+
+        <!--Radio buttons-->
+        <div class="radio-btns">
+            <div class="radio-title">
+                <label id="option-label">Where are you working currently?</label>
+            </div>
+
+            <div class="radio-label">
+                <input type="radio" id="radio-btn" name="market-place" value="upwork" checked>
+                <label for="upwork" id="upwork-label">Upwork</label>
+            </div>
+
+            <div class="radio-label">
+                <input type="radio" id="radio-btn" name="market-place" value="fiverr">
+                <label for="fiverr" id="fiverr-label">Fiverr</label>
+            </div>
+
+            <div class="radio-label">
+                <input type="radio" id="radio-btn" name="market-place" value="freelancer">
+                <label for="freelancer"  id="freelancer-label">Freelancer</label>
+            </div>
+        </div>
+        <!--X-->
+
+        <!--Category Dropdown -->
+        <div class="dropdown-box">
+            <label for="dropdown" id="dropdown-label">What type of work you do on freelance marketplace?</label>
+            <select name="jobs" id="dropdown">
+                <option disabled selected value >Select an option</option>
+                <option value="graphic-design">Graphic Design</option>
+                <option value="ui-ux">UI/UX Design</option>
+                <option value="front-end">Front End Development</option>
+                <option value="back-end">Back End Development</option>
+                <option value="fullstack">Full Stack Developer</option>
+            </select>
+        </div>
+        <!--X-->
+
+        <!--Interest Checkboxes-->
+        <div class="checkboxs">
+            <div class="checkbox-title">
+                <label for="">Let us know your interests? <span class="check-apply">(Check all that apply)</span></label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="check" name="interest"  value="android">
+                <label for="android" id="android-label">Android Development</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="check" name="interest"  value="data">
+                <label for="data" id="data-label">Data Visualization</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="check" name="interest"  value="data">
+                <label for="data" id="data-label">Wordpress</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="check" name="interest"  value="android">
+                <label for="data" id="data-label">Desktop Application</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="check" name="interest"  value="android">
+                <label for="data" id="data-label">Game Development</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="check" name="interest"  value="android">
+                <label for="data" id="data-label">Blockchain</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="check" name="interest"  value="android">
+                <label for="data" id="data-label">Artificial Intelligence</label>
+            </div>
+        </div>
+        <!--X-->
+
+        <!--Comment Box-->
+        <div class="comment-box">
+            <label id="comment-box-label">Any comments?</label>
+            <textarea rows="6" cols="60" name="comment" form="survey-form" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <!--X-->     
+        <input type="submit" id="submit">
+    </form>
+</body>
+</html>

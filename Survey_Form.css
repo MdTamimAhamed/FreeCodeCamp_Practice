@@ -1,0 +1,154 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color:#485460;
+    --white: #ffffff;
+    --main-title:#1e272e;
+    --input-txt:#495057;
+}
+
+body{
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+#title{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: var(--white);
+}
+#description{
+    text-align: center;
+    padding-bottom: 30px;
+    color: var(--white);
+}
+
+#survey-form{
+    max-width: 600px;
+    background-color: var(--main-title);
+    margin: 0 auto;
+    padding: 60px 40px;
+    margin-bottom: 50px;
+    border-radius:.5em;
+}
+#survey-form label{
+    color: var(--white);
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.input-box input{
+    padding: 12px;
+    border: 2px solid var(--main-title);
+    border-radius: 5px;
+    outline-color: var(--primary-color);
+}
+.input-box input::placeholder{
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+}
+.age-opt{
+    font-size: .8em;
+}
+
+/*Dropdowns style (role & category)*/
+.dropdown-box{
+    display: flex;
+    flex-direction: column;
+}
+.dropdown-box #dropdown{
+    border-radius: 5px;
+    padding: 7px 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    outline-color: var(--primary-color);
+    color: var(--input-txt);
+    margin-bottom: 20px;
+}
+
+/*Radio buttons section style*/
+.radio-btns{
+    margin-bottom: 20px;
+}
+.radio-title{
+    padding: 10px 0px;
+}
+.radio-label{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.radio-label input{
+    min-height: 1.5em;
+    min-width: 1.5em;
+    margin: 0px 10px 5px 0px;
+}
+
+/*Checkbox section style*/
+.checkboxes{
+    margin-bottom: 20px;
+}
+.checkbox-title{
+    padding: 10px 0px;
+}
+.check{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.check input{
+    min-height: 1.5em;
+    min-width: 1.5em;
+    margin: 0px 10px 5px 0px;
+}
+.check-apply{
+    font-size: .9em;
+}
+
+/*Comment box style*/
+.comment-box{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+.comment-box textarea{
+    max-width: 100%;
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--input-txt);
+    padding: 12px ;
+    outline-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+/*Submit button style*/
+#submit{
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 1.1em;
+    color: var(--white);
+    background-color:transparent;
+    border: 2px solid var(--white);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+#submit:hover{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
